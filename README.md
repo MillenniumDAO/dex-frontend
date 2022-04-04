@@ -1,0 +1,7 @@
+# Uniswap-UI-fork template
+
+### Rinkeby
+
+- Factory: 0x28fbBEd0cA309A8f5bc04565f79e82B0B092324D
+- Router: 0xa52F32017252969656FE3DD2bCE3A8083c8f2DEa
+- Pair hash: 0x8897f1f34a81ee48d6fc425cd4779b617ea39c85f865509de3475880494a68b5
