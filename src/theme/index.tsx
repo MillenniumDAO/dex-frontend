@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { transparentize } from 'polished';
+// import { transparentize } from 'polished';
 import styled, {
   ThemeProvider as StyledComponentsThemeProvider,
   createGlobalStyle,
@@ -9,6 +9,7 @@ import styled, {
 import { useIsDarkMode } from '../state/user/hooks';
 import { Text, TextProps } from 'rebass';
 import { Colors } from './styled';
+import Background from '../assets/images/background.webp';
 
 export * from './components';
 
@@ -213,13 +214,21 @@ html {
 }
 
 body {
-  min-height: 100vh;
-  background-position: 0 -30vh;
   background-repeat: no-repeat;
-  background-image: ${({ theme }) =>
-    `radial-gradient(50% 50% at 50% 50%, ${transparentize(0.8, theme.primary1)} 0%, ${transparentize(
-      1,
-      theme.bg1
-    )} 100%)`};
+  background-color: rgb(2, 24, 72);
+  background-size: cover;
+  background-image: url(${Background});
 }
 `;
+
+/** old body style */
+// body {
+//   min-height: 100vh;
+//   background-position: 0 -30vh;
+//   background-repeat: no-repeat;
+//   background-image: ${({ theme }) =>
+//     `radial-gradient(50% 50% at 50% 50%, ${transparentize(0.8, theme.primary1)} 0%, ${transparentize(
+//       1,
+//       theme.bg1
+//     )} 100%)`};
+// }
